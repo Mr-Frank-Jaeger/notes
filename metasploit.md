@@ -149,6 +149,7 @@ nmap -Pn -v -T4 -A -iL lab1.txt -oX lab1.xml; xsltproc lab1.xml; -o lab.html
     * such as `eth0`
 
 #sessions
+    `bg` will background current session
     `sessions`   list all sessions
     `-i <session number>`   to switch to that session
     
