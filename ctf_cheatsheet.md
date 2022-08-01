@@ -277,12 +277,14 @@ https://bytefreaks.net/gnulinux/how-to-set-a-static-ip-address-from-the-command-
 * persistent
 https://www.cyberciti.biz/faq/add-configure-set-up-static-ip-address-on-debianlinux/
     * edit `/etc/network/interfaces` and add
+    ```
     auto eth0
         iface eth0 inet static
         address 192.168.1.101
         netmask 255.255.255.0
         gateway 192.168.1.1
         dns-nameservers 8.8.8.8 9.9.9.9
+    ```
     * then restart NetworkManager
     * then bring the interface down and up
         `ifdown eth0`
